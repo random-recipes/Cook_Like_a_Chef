@@ -8,17 +8,22 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
-class RecipeAdapter( private val recipeList: MutableList<List<String>>) : RecyclerView.Adapter<RecipeAdapter.ViewHolder>() {
+class RecipeAdapter(
+    private val recipeList: MutableList<List<String>>,
+    private val onItemClick: (String, String,String) -> Unit // Callback for item click
+) : RecyclerView.Adapter<RecipeAdapter.ViewHolder>() {
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val recipeImage: ImageView
         val recipeName: TextView
         val recipeArea: TextView
+
 
         init {
             // Find our RecyclerView item's ImageView for future use
             recipeImage = view.findViewById(R.id.recipe_image)
             recipeName = view.findViewById(R.id.recipe_name)
             recipeArea = view.findViewById(R.id.recipe_area)
+
         }
     }
 
@@ -41,6 +46,16 @@ class RecipeAdapter( private val recipeList: MutableList<List<String>>) : Recycl
 
         recipeName.text = recipeList[position][1]
         recipeArea.text = recipeList[position][2]
+
+
+
+
+
+        // Set OnClickListener for the item
+        holder.itemView.setOnClickListener {
+            onItemClick(recipeList[position][0], recipeList[position][1],recipeList[position][3]) // Pass image URL and instructions to callback
+        }
+
     }
     override fun getItemCount() = recipeList.size
 }
