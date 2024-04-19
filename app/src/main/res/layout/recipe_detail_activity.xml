@@ -1,51 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="10dp">
 
+    <!-- Image View for Recipe Image -->
     <ImageView
         android:id="@+id/image_recipe"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="246dp"
+        android:layout_height="168dp"
         android:layout_centerHorizontal="true"
-        android:scaleType="centerCrop"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="23dp"
+        android:src="@android:drawable/ic_dialog_alert" />
 
+    <!-- Recipe Name -->
     <TextView
         android:id="@+id/text_recipe_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:text="@string/recipe_name"
         android:layout_below="@id/image_recipe"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"/>
+        android:text="@string/recipe_name"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/text_recipe_instructions_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/instructions"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_below="@id/text_recipe_name"
-        android:layout_marginTop="16dp"/>
-
-    <ScrollView
+    <!-- Container for Ingredients and Instructions -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text_recipe_instructions_label"
-        android:layout_marginTop="8dp">
+        android:layout_below="@id/text_recipe_name"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
 
-        <TextView
-            android:id="@+id/text_recipe_instructions"
-            android:layout_width="match_parent"
+        <!-- CardView for Ingredients -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:padding="8dp"/>
-    </ScrollView>
+            android:layout_marginEnd="8dp"
+            android:layout_weight="0.5"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/text_recipe_ingredients_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ingredients"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_recipe_ingredients"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:textSize="12sp" />
+                </ScrollView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Instructions -->
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/text_recipe_instructions_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/instructions"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_recipe_instructions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:padding="8dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="32dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="@color/cardview_light_background"
+        app:srcCompat="@drawable/thin_arrow_left_icon" />
 
 </RelativeLayout>

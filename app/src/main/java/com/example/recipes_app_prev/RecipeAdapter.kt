@@ -10,12 +10,13 @@ import com.bumptech.glide.Glide
 
 class RecipeAdapter(
     private val recipeList: MutableList<List<String>>,
-    private val onItemClick: (String, String,String) -> Unit // Callback for item click
+    private val onItemClick: (String, String,String,String) -> Unit // Callback for item click
 ) : RecyclerView.Adapter<RecipeAdapter.ViewHolder>() {
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val recipeImage: ImageView
         val recipeName: TextView
         val recipeArea: TextView
+
 
 
         init {
@@ -53,7 +54,7 @@ class RecipeAdapter(
 
         // Set OnClickListener for the item
         holder.itemView.setOnClickListener {
-            onItemClick(recipeList[position][0], recipeList[position][1],recipeList[position][3]) // Pass image URL and instructions to callback
+            onItemClick(recipeList[position][0], recipeList[position][1],recipeList[position][3],recipeList[position][4]) // Pass image URL and instructions to callback
         }
 
     }
