@@ -12,6 +12,7 @@
         android:layout_height="168dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="23dp"
+        android:contentDescription="@string/recipe_image"
         android:src="@android:drawable/ic_dialog_alert" />
 
     <!-- Recipe Name -->
@@ -112,6 +113,7 @@
         android:layout_marginStart="2dp"
         android:layout_marginTop="1dp"
         android:backgroundTint="@color/cardview_light_background"
+        android:contentDescription="@string/back_button"
         app:srcCompat="@drawable/thin_arrow_left_icon" />
 
 </RelativeLayout>
