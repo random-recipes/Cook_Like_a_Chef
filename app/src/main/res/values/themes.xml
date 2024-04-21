@@ -1,9 +1,40 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+
     <!-- Base application theme. -->
-    <style name="Base.Theme.Recipes_app_prev" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.Recipes_app_prev" parent="Base.Theme.Recipes_app_prev" />
+
+
+
+        <!-- Theme for RecipesCard activity. -->
+        <style name="RecipesCardTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+            <!-- Primary brand color. -->
+            <item name="colorPrimary">@color/recipes_card_primary</item>
+            <item name="colorPrimaryVariant">@color/recipes_card_primary_variant</item>
+            <item name="colorOnPrimary">@color/recipes_card_on_primary</item>
+            <!-- Secondary brand color. -->
+            <item name="colorSecondary">@color/recipes_card_secondary</item>
+            <item name="colorSecondaryVariant">@color/recipes_card_secondary_variant</item>
+            <item name="colorOnSecondary">@color/recipes_card_on_secondary</item>
+            <!-- Status bar color. -->
+            <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+            <!-- Customize your theme here. -->
+        </style>
+
+
+
+
+
 </resources>

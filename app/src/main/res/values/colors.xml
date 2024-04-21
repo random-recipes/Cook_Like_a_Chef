@@ -5,5 +5,28 @@
     <color name="white">#FFFFFFFF</color>
     <color name="greyLight">#A8FFFFFF</color>
     <color name="greyDark">#94282627</color>
+    <color name="my_light_primary">#170101</color>
+    <color name="my_light_on_primary">#681B1B</color>
+    <color name="my_dark_primary">#08232A</color>
+    <color name="my_dark_on_primary">#510606</color>
+
+
+    <!-- Custom colors. -->
+    <color name="primary">#008577</color>
+    <color name="primary_variant">#00574B</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="secondary">#D81B60</color>
+    <color name="secondary_variant">#AD1457</color>
+    <color name="on_secondary">#FFFFFF</color>
+
+    <!-- Custom colors for RecipesCard activity. -->
+    <color name="recipes_card_primary">#FFC107</color>
+    <color name="recipes_card_primary_variant">#FF9800</color>
+    <color name="recipes_card_on_primary">#000000</color>
+    <color name="recipes_card_secondary">#4CAF50</color>
+    <color name="recipes_card_secondary_variant">#388E3C</color>
+    <color name="recipes_card_on_secondary">#FFFFFF</color>
+
+
 
 </resources>

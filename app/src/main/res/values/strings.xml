@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">recipes_app_prev</string>
+    <string name="app_name">Random Recipe</string>
     <string name="default_recipe_name">Name of Food</string>
     <string name="area">Area</string>
     <string name="instructions">Instructions</string>
