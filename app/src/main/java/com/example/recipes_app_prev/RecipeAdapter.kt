@@ -9,8 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
 class RecipeAdapter(
-    private val recipeList: MutableList<List<String>>,
-    private val onItemClick: (String, String,String,String) -> Unit // Callback for item click
+    private val recipeList: MutableList<List<String>>
 ) : RecyclerView.Adapter<RecipeAdapter.ViewHolder>() {
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val recipeImage: ImageView
