@@ -9,53 +9,42 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
 class RecipeAdapter(
-    private val recipeList: MutableList<List<String>>
+    private val recipeList: MutableList<List<String>>,
+    private val listener: OnItemClickListener
 ) : RecyclerView.Adapter<RecipeAdapter.ViewHolder>() {
+
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val recipeImage: ImageView
-        val recipeName: TextView
-        val recipeArea: TextView
-
-
+        val recipeImage: ImageView = view.findViewById(R.id.recipe_image)
+        val recipeName: TextView = view.findViewById(R.id.recipe_name)
+        val recipeArea: TextView = view.findViewById(R.id.recipe_area)
 
         init {
-            // Find our RecyclerView item's ImageView for future use
-            recipeImage = view.findViewById(R.id.recipe_image)
-            recipeName = view.findViewById(R.id.recipe_name)
-            recipeArea = view.findViewById(R.id.recipe_area)
+            view.setOnClickListener {
 
+            }
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        // Create a new view, which defines the UI of the list item
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.recipes_card, parent, false)
-
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.recipes_card, parent, false)
         return ViewHolder(view)
     }
 
-
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val recipeName = holder.recipeName
-        val recipeArea = holder.recipeArea
-        Glide.with(holder.itemView)
-            .load(recipeList[position][0])
-            .centerCrop()
-            .into(holder.recipeImage)
+        val item = recipeList[position]
+        Glide.with(holder.itemView.context).load(item[0]).centerCrop().into(holder.recipeImage)
+        holder.recipeName.text = item[1]
+        holder.recipeArea.text = item[2]
 
-        recipeName.text = recipeList[position][1]
-        recipeArea.text = recipeList[position][2]
-
-
-
-
-
-        // Set OnClickListener for the item
         holder.itemView.setOnClickListener {
-            onItemClick(recipeList[position][0], recipeList[position][1],recipeList[position][3],recipeList[position][4]) // Pass image URL and instructions to callback
+            // Pass all details including area for detailed view
+            listener.onItemClick(item[0], item[1], item[3], item[4])
         }
-
     }
+
+    interface OnItemClickListener {
+        fun onItemClick(imageUrl: String, recipeName: String, instructions: String, ingredients: String)
+    }
+
     override fun getItemCount() = recipeList.size
 }
