@@ -1,26 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CardView.Dark"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp">
+    android:padding="15dp">
 
-    <!-- Image View for Recipe Image -->
-    <ImageView
-        android:id="@+id/image_recipe"
-        android:layout_width="246dp"
-        android:layout_height="168dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="23dp"
-        android:contentDescription="@string/recipe_image"
-        android:src="@android:drawable/ic_dialog_alert" />
+    <!-- CardView for Image View with white background -->
 
     <!-- Recipe Name -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_image"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="14dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/image_recipe"
+                android:layout_width="326dp"
+                android:layout_height="179dp"
+                android:contentDescription="@string/recipe_image"
+                android:src="@android:drawable/ic_dialog_alert"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.615" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
     <TextView
         android:id="@+id/text_recipe_name"
+        style="@style/TitleStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/image_recipe"
+        android:layout_below="@id/card_image"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:text="@string/recipe_name"
@@ -32,8 +58,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/text_recipe_name"
-        android:orientation="horizontal"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
 
         <!-- CardView for Ingredients -->
         <androidx.cardview.widget.CardView
@@ -55,7 +81,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/ingredients"
-                    android:textSize="18sp"
+                    style="@style/TitleStyle"
                     android:textStyle="bold" />
 
                 <ScrollView
@@ -64,10 +90,13 @@
 
                     <TextView
                         android:id="@+id/text_recipe_ingredients"
+                        style = "@style/TextStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="8dp"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:textStyle= "bold"
+                        android:text = "@string/ingredients_text"/>
                 </ScrollView>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -89,15 +118,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/instructions"
+                    style="@style/TitleStyle"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/text_recipe_instructions"
+                    style="@style/TextStyle1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:padding="8dp"/>
+                    android:padding="8dp"
+                    android:text= "@string/instructions_text"/>
             </LinearLayout>
         </ScrollView>
 
@@ -106,13 +137,13 @@
     <!-- Back Button -->
     <ImageButton
         android:id="@+id/backButton"
-        android:layout_width="32dp"
-        android:layout_height="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="2dp"
         android:layout_marginTop="1dp"
-        android:backgroundTint="@color/cardview_light_background"
+        android:backgroundTint="@android:color/transparent"
         android:contentDescription="@string/back_button"
         app:srcCompat="@drawable/thin_arrow_left_icon" />
 

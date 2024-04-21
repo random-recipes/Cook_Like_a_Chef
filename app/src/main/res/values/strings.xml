@@ -8,4 +8,9 @@
     <string name="recipe_image">Recipe Image</string>
     <string name="back_button">Back Button</string>
     <string name="recipe_image1">Recipe image</string>
+    <string name="cook_like_a_chef">COOK LIKE A CHEF</string>
+    <string name="swipe_to_begin">Swipe to Begin</string>
+    <string name="instructions_text">Instructions</string>
+    <string name="ingredients_text">ingredients_text</string>
+    <string name="welcome_picture">description</string>
 </resources>
