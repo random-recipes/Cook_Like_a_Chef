@@ -161,11 +161,20 @@ class MainActivity : AppCompatActivity() {
                     val ingredients = StringBuilder()
 
                     for (j in 1..20) {
-                        val ingredient = meal.optString("strIngredient$j", "")
-                        if (ingredient.isNotBlank()) ingredients.append("$ingredient, ")
+                        val ingredient = meal.optString("strIngredient$j", "").trim()
+                        val measure = meal.optString("strMeasure$j", "").trim()
+                        if (ingredient.isNotBlank()) {
+                        if (measure.isNotBlank()) {
+                            ingredients.append("$measure-$ingredient,\n")
+                        } else {
+                            ingredients.append("$ingredient, ")
+                        }
                     }
+                }
 
-                    if (ingredients.isNotEmpty()) ingredients.setLength(ingredients.length - 2)
+                if (ingredients.isNotEmpty()) {
+                    ingredients.setLength(ingredients.length - 2) // Remove trailing comma and space
+                }
 
                     val recipeInfoList = listOf(imageUrl, name, area, instructions, ingredients.toString())
                     recipeList.add(recipeInfoList)
