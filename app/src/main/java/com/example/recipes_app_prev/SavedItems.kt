@@ -3,8 +3,11 @@ package com.example.recipes_app_prev
 object SavedItems {
     private val items = mutableListOf<List<String>>()
 
+
     fun addItem(item: List<String>) {
-        items.add(item)
+        if (!items.contains(item)) {
+            items.add(item)
+        }
     }
 
     fun deleteItem(item: List<String>) {

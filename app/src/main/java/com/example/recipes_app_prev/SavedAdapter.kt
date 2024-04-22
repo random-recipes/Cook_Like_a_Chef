@@ -21,6 +21,8 @@ class SavedAdapter(private val savedList: MutableList<List<String>>,
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val saveImage: ImageView
         val saveName: TextView
+        val savedArea: TextView
+
         val unsaveButton: Button
 
 
@@ -29,6 +31,8 @@ class SavedAdapter(private val savedList: MutableList<List<String>>,
             saveImage = view.findViewById(R.id.save_image)
             saveName = view.findViewById(R.id.save_name)
             unsaveButton=view.findViewById(R.id.unsave)
+            savedArea = view.findViewById(R.id.saved_area)
+
             view.setOnClickListener {
 
             }
@@ -47,12 +51,16 @@ class SavedAdapter(private val savedList: MutableList<List<String>>,
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
         val saveName = holder.saveName
+        val savedArea = holder.savedArea
+
         Glide.with(holder.itemView)
             .load(savedList[position][0])
             .centerCrop()
             .into(holder.saveImage)
 
         saveName.text = savedList[position][1]
+
+        savedArea.text = savedList[position][2]
 
         holder.unsaveButton.setOnClickListener {
             val itemToRemove =

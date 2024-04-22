@@ -45,7 +45,7 @@ class RecipeAdapter(
             var item = recipeList[position][1]
             SavedItems.addItem(recipeList[position].toList())
 
-            Toast.makeText(holder.itemView.context, item + " Saved", Toast.LENGTH_SHORT).show()}
+            Toast.makeText(holder.itemView.context, item +" Saved", Toast.LENGTH_SHORT).show()}
 
         holder.itemView.setOnClickListener {
             // Pass all details including area for detailed view
