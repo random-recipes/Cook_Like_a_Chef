@@ -44,4 +44,12 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
+
+    <Button
+        android:id="@+id/savedfromsearch"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:text="Saved" />
+
+
 </LinearLayout>

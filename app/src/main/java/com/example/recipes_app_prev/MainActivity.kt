@@ -22,6 +22,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var searchEditText: EditText
     private lateinit var searchButton: Button
     private lateinit var clearButton: Button
+    private lateinit var savedfromsearchButton: Button
+
     private lateinit var categoriesSpinner: Spinner
     private lateinit var recipeList: MutableList<List<String>>
     private lateinit var rvRecipes: RecyclerView
@@ -51,6 +53,7 @@ class MainActivity : AppCompatActivity() {
         searchButton = findViewById(R.id.searchButton)
         clearButton = findViewById(R.id.clearButton)
         categoriesSpinner = findViewById(R.id.categoriesSpinner)
+        savedfromsearchButton=findViewById(R.id.savedfromsearch)
 
         fetchCategories()
         setupButtonListeners()
@@ -100,6 +103,11 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onNothingSelected(parent: AdapterView<*>) {}
+        }
+
+        savedfromsearchButton.setOnClickListener{
+            val intent = Intent(this, SavedActivity::class.java)
+            startActivity(intent)
         }
     }
 
