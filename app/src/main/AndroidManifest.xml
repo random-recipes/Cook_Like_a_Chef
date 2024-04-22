@@ -21,6 +21,9 @@
         <activity android:name=".RecipeDetailActivity">
 
         </activity>
+        <activity android:name=".SavedActivity">
+
+        </activity>
 
         <activity android:name=".WelcomeActivity"
             android:exported="true">
