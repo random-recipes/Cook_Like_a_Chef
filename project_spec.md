@@ -106,7 +106,7 @@ The last one is the saved recipes page.
 For Milestone 2, include **2+ Videos/GIFs** of the build process here!
 <img src='https://i.imgur.com/yQq2seb.gif' title='Video Demo 1' width='' alt='Video Demo 1' />
 <img src='https://i.imgur.com/47M5fn2.gif' title='Video Demo 2' width='' alt='Video Demo 2' />
-<img src='https://i.imgur.com/qQtm8pr.gif' title='Video Demo 3' width='' alt='Video Demo 3' />
+![qQtm8pr](https://github.com/random-recipes/Cook_Like_a_Chef/assets/144638698/452d5cc1-731d-4ca4-b443-b1c59906d08e)
 
 
 ## License
