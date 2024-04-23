@@ -112,7 +112,7 @@ For Milestone 2, include **2+ Videos/GIFs** of the build process here!
 
 
 
-<img src='https://i.imgur.com/Bo8dJkZ.gif' title='Video Demo 2' width='' alt='Video Demo 2' />
+<img src='https://i.imgur.com/Bo8dJkZ.gif' title='Video Demo 4' width='' alt='Video Demo 4' />
 
 ## License
 
