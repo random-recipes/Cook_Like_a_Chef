@@ -4,9 +4,9 @@
 
 Submitted by:
 - **Vivian Ha**
--**Tetyana Matsegora**
--**Nobel Menghis**
--**Erlisja Kore**
+- **Tetyana Matsegora**
+- **Nobel Menghis**
+- **Erlisja Kore**
 
 Time spent: **23** hours spent in total
 
@@ -36,14 +36,14 @@ The following REQUIRED files are included:
 
 The following EXTRA features are implemented:
 
-- [ ] List anything else that you added to improve your submission!
+- [] List anything else that you added to improve your submission!
 
 ## 🎥 Demo Video
 
 Here's a video that demos all of the app's implemented features:
 
 https://github.com/random-recipes/Cook_Like_a_Chef/assets/144638698/fd489b0a-0cb6-447d-9ff7-1050e0238ed2
-
+video link: https://www.youtube.com/watch?v=Rd0vEv8IkAQ
 VIDEO created with **ClipChamp**
 
 ## Notes
