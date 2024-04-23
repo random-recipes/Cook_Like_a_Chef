@@ -48,6 +48,6 @@ Offer movie information, reviews, ratings, and showtimes using a movie database 
 
 
 Final Idea for App:
-    - Name: Random Recipe!
+    - Name: Cook Like A Chef!
     - API used: https://www.themealdb.com/api.php
-    - Description: Our main functionality will be an endless scroll of random recipes. If a person clicks on a recipe in the recycler view, more information will pop up along with the actual recipe directions. The person will be able to save the recipe that they like and in another page, saved recipes will be shown.
+    - Description: Our main functionality will be an endless scroll of recipes. If a person clicks on a recipe in the recycler view, more information will pop up along with the actual recipe directions. The person will be able to save the recipe that they like and in another page, saved recipes will be shown.
