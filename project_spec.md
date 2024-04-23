@@ -104,7 +104,7 @@ one is the main recycler view page. The second one is the page if we click on th
 The last one is the saved recipes page.
 
 For Milestone 2, include **2+ Videos/GIFs** of the build process here!
-<img src='https://i.imgur.com/yQq2seb.gif' title='Video Demo 1' width='200' alt='Video Demo 1' />
+<img src='https://i.imgur.com/yQq2seb.gif' title='Video Demo 1' width='400' alt='Video Demo 1' />
 <img src='https://i.imgur.com/47M5fn2.gif' title='Video Demo 2' width='200' alt='Video Demo 2' />
 
 
