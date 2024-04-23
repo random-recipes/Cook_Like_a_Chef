@@ -44,6 +44,8 @@ Here's a video that demos all of the app's implemented features:
 
 https://github.com/random-recipes/Cook_Like_a_Chef/assets/144638698/fd489b0a-0cb6-447d-9ff7-1050e0238ed2
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rd0vEv8IkAQ?si=WEM-l1muDQT4EY5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 video link: https://www.youtube.com/watch?v=Rd0vEv8IkAQ
 
 VIDEO created with **ClipChamp**
