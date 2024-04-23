@@ -36,7 +36,7 @@ The following REQUIRED files are included:
 
 The following EXTRA features are implemented:
 
-- [] List anything else that you added to improve your submission!
+- [ ] List anything else that you added to improve your submission!
 
 ## 🎥 Demo Video
 
