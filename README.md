@@ -42,7 +42,7 @@ The following EXTRA features are implemented:
 
 Here's a video that demos all of the app's implemented features:
 
-<img src='https://youtu.be/Rd0vEv8IkAQ' title='Video Demo' width='' alt='Video Demo' />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rd0vEv8IkAQ?si=T_T9PvGWgAL0fVMz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 VIDEO created with **ClipChamp**
 
