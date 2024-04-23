@@ -1,6 +1,6 @@
 <!-- (This is a comment) INSTRUCTIONS: Go through this page and fill out any **bolded** entries with their correct values.-->
 
-# AND101 Milestone 2 - **Group 27 - Random Recipes**
+# AND101 Milestone 2 - **Group 27 - Cook Like A Chef**
 
 Submitted by:
 - **Vivian Ha**
@@ -12,7 +12,7 @@ Time spent: **23** hours spent in total
 
 ## Summary
 
-This document provides a summary of our project building process for our app, **Random Recipes**
+This document provides a summary of our project building process for our app, **Cook Like A Chef**
 
 ## Milestone Requirements
 
@@ -42,9 +42,9 @@ The following EXTRA features are implemented:
 
 Here's a video that demos all of the app's implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Demo' width='' alt='Video Demo' />
+<img src='https://youtu.be/Rd0vEv8IkAQ' title='Video Demo' width='' alt='Video Demo' />
 
-VIDEO created with **your chosen video tool**
+VIDEO created with **ClipChamp**
 
 ## Notes
 
