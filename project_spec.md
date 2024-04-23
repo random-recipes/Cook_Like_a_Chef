@@ -91,15 +91,9 @@ Required Feature
 
 <img src="https://hackmd.io/_uploads/Hk-M98OlR.png" alt="wireframes 1" width="250">
 
-<img src="https://hackmd.io/_uploads/rJMaYLdeC.jpg" alt="wireframe 2" width="2500">
+<img src="https://hackmd.io/_uploads/rJMaYLdeC.jpg" alt="wireframe 2" width="250">
 
 <img src="https://hackmd.io/_uploads/HyBjqI_l0.png" alt="wireframe 3" width="250">
-
-![wireframes 1](https://hackmd.io/_uploads/Hk-M98OlR.png)
-
-![wireframe 2](https://hackmd.io/_uploads/rJMaYLdeC.jpg)
-
-![wireframe 3](https://hackmd.io/_uploads/HyBjqI_l0.png)
 
 
 ## Build Notes
