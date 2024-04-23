@@ -25,8 +25,8 @@ TOP 3 IDEAS (in no particular order):
     **Mobile**: This app would mainly provide ease of access because if someone is cooking, having a whole laptop out for a recipe might be a lot. In addition, people can quickly see multiple ideas.
     **Story**: When walking around the grocery store, it would be easy to just scroll through and find something quick to make. It would be easy and efficient for people to use.
     **Market**: The market is large because everyone needs food, so everyone could use this. It's especially convenient for people who are on the go (i.e. office workers, etc) so they can look for recipes while commuting. 
-    **Habit**: This is very habit forming because people can endlessly scroll for receipes and can save the receipes that they like. People need receipes for food everyday, so this would be used often.
-    **Scope**: A stripped down version would be having a recycler view with endless scroll of random recipes (click on the recipe and the directions will pop up in a page) and a save function where people can look at the receipes they saved. This should be fine to complete by the deadline, especially by using previous projects for reference. This is clearly defined as a recipe app.
+    **Habit**: This is very habit forming because people can endlessly scroll for recipes and can save the receipes that they like. People need receipes for food everyday, so this would be used often.
+    **Scope**: A stripped down version would be having a recycler view with endless scroll of recipes (click on the recipe and the directions will pop up in a page) and a save function where people can look at the receipes they saved. This should be fine to complete by the deadline, especially by using previous projects for reference. This is clearly defined as a recipe app.
 
 2.  Erlisja: Movie Database API:
 https://www.omdbapi.com/
