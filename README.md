@@ -42,7 +42,7 @@ The following EXTRA features are implemented:
 
 Here's a video that demos all of the app's implemented features:
 
-<video src='https://youtu.be/Rd0vEv8IkAQ' title='Video Demo' width='300' alt='Video Demo' />
+https://github.com/random-recipes/Cook_Like_a_Chef/assets/144638698/fd489b0a-0cb6-447d-9ff7-1050e0238ed2
 
 VIDEO created with **ClipChamp**
 
