@@ -112,8 +112,6 @@ For Milestone 2, include **2+ Videos/GIFs** of the build process here!
 
 
 
-<img src='https://i.imgur.com/Bo8dJkZ.gif' title='Video Demo 4' width='' alt='Video Demo 4' />
-
 ## License
 
 Copyright **2024** **Erlisja Kore, Vivian Ha, Nobel Menghis, Tetyana Matsegora**
